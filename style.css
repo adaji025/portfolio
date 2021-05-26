@@ -60,9 +60,32 @@
 }
 
 /* about css */
-#about {
-    
+section#about {
+    height: 50vh;
 }
+#about .about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 40px;
+    margin: 40px ;
+    justify-content: center;
+}
+section#about .about .about-image {
+    display: flex;
+    background-color: rgb(207, 181, 174);
+    border: 4px #fff solid;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px 10px;
+}
+section#about .about .about-image img {
+    width: 100%;
+}
+section#about .about .about-write-up {
+    font-size: 3rem;
+    padding: 0 40px;
+}
+
 
 /* media query for banner*/
 @media screen and (max-width: 997px) {
@@ -104,12 +127,33 @@
 
 @media screen and (max-width: 800px) {
     #banner {
-        height: 800px;
+        height: 140vh;
     }
     
 }
 @media screen and (min-width: 997px) {
     .banner-content {
         justify-content: center;
+    }
+}
+
+/* media queries for about section */
+@media screen and (max-width: 1200px) {
+    section#about .about .about-image img {
+        width: 100%;
+    }
+    section#about .about .about-write-up p {
+        font-size: 1.3rem;
+    }
+}
+@media  screen and (max-width: 997px) {
+    section#about {
+        margin-top: 20rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    section#about .about {
+        display: flex;
+        flex-direction: column;
     }
 }
