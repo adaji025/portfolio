@@ -1,0 +1,115 @@
+#banner {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(245, 92, 53);
+    justify-content: center;
+    padding: 35px 100px 0;
+    flex-wrap: wrap;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+}
+
+.s-icons {
+    color: rgb(224, 217, 217);
+    margin: 2rem 0 0 0;
+    padding: 2rem;
+}
+
+.name {
+    font-family: "Trirong", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(224, 217, 217);
+}
+
+.banner-content {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+
+}
+
+.banner-content .left img {
+    border: 4px #fff solid;
+    border-radius: 50%;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.banner-content .right {
+    font-size: 1.7rem;
+    margin: 3rem 0 0 0;
+    color: rgb(224, 217, 217);
+}
+
+.banner-content .right span {
+    display: block;
+    font-size: 3rem;
+}
+.banner-closing {
+    display: flex;
+    padding: 40px;
+}
+.banner-content .right button {
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+/* about css */
+#about {
+    
+}
+
+/* media query for banner*/
+@media screen and (max-width: 997px) {
+    #banner {
+        height: 140vh;
+    }
+
+    .name {
+        text-align: center ;
+        font-size: 1.5rem;
+    }
+
+    .banner-content {
+        flex-direction: column;
+    }
+
+    .banner-content .left img {
+        width: 70%;
+    }
+
+    .banner-content .right {
+        width: auto;
+    }
+
+    .banner-content .right h1,
+    h2 {
+        text-align: center;
+    }
+
+    #top {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .s-icons {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #banner {
+        height: 800px;
+    }
+    
+}
+@media screen and (min-width: 997px) {
+    .banner-content {
+        justify-content: center;
+    }
+}
