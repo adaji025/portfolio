@@ -474,5 +474,7 @@ footer span a {
         grid-template-columns: 1fr 1fr;
         height: 80vh;
     }
-    
+    footer {
+        height: 100vh;
+    }
 }
