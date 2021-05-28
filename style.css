@@ -425,29 +425,6 @@ footer .copy-right-and-nav {
 }
 /* gallery media queries ends */
 
-/* footer media queries */
-@media screen and (max-width: 900px) {
-    footer {
-    padding: 30px;
-    height: 50vh;
-}
-footer {
-    height: 40vh;
-}
-footer write-up span h1{
-    font-size: 1rem;
-}
-.copy-right{
-    font-size: 20px;
-}
-.nav span{
-    display: inline;
-    margin: 10px;
-    font-size: 20px;
-}
-  }
-/* footer media queries ends */
-
   /* contact media query */
   @media screen and (max-width: 800px) {
     .contact-add span{
@@ -463,3 +440,31 @@ footer write-up span h1{
     }
     
 }
+/* conact media queries end */
+
+/* footer media queries */
+@media screen and (max-width: 900px) {
+    footer {
+    padding: 30px;
+    height: 80vh;
+}
+footer {
+    height: 70vh;
+}
+footer write-up span h1{
+    font-size: 1rem;
+}
+.copy-right{
+    font-size: 20px;
+}
+.nav span{
+    display: block;
+    margin: 10px;
+    font-size: 20px;
+}
+footer span a {
+    padding: 10px;
+}
+  }
+  
+/* footer media queries ends */
