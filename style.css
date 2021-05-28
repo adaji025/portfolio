@@ -5,7 +5,7 @@
 }
 #banner {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: rgb(245, 92, 53);
     justify-content: center;
     padding: 35px 100px 0;
@@ -40,10 +40,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 80vh;
-    text-align: center;
+    /* text-align: center; */
 
 }
-
+.banner-content .left {
+    text-align: center;
+}
 .banner-content .left img {
     border: 4px #fff solid;
     border-radius: 50%;
@@ -52,12 +54,17 @@
 }
 
 .banner-content .right {
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
     margin: 3rem 0 0 0;
     color: rgb(224, 217, 217);
     transition: 5s;
 }
-
+.right span h1, h2{
+    font-size: 2.5rem;
+}
+h1 span{
+    font-size: 20px;
+}
 .banner-content .right span {
     display: block;
     font-size: 3rem;
@@ -88,8 +95,7 @@ a {
 #about .about {
     display: grid;
     grid-template-columns: 50% 50%;
-    /* padding: 40px; */
-    margin: 40px;
+    /* margin: 40px; */
     justify-content: center;
 }
 
@@ -108,8 +114,8 @@ section#about .about .about-image img {
 }
 
 section#about .about .about-write-up {
-    font-size: 1.6rem;
-    padding: 0 40px;
+    font-size: 1.5rem;
+    padding: 0 20px;
 }
 
 section#about .about .about-write-up .card {
@@ -153,9 +159,9 @@ section#skills .skills-item {
     text-align: center;
 }
 
-.skills-set {
+/* .skills-set {
     padding: 40px;
-}
+} */
 
 section#skills .skills .skills-set .skills-set-1,
 .skills-set-2 {
@@ -246,9 +252,6 @@ section#contact .contact {
     margin: 20px;
     font-size: 2rem;
 }
-/* .contact-msg {
-    text-align: center;
-} */
 input[type=text], textarea {
     width: 100%;
     padding: 12px;
@@ -281,6 +284,7 @@ input[type=text], textarea {
 
 /* footer css */
 footer {
+    padding: 20px;
     color: white;
     background-color: black;
     height: 30vh;
@@ -308,65 +312,39 @@ footer .copy-right-and-nav {
     margin: 10px;
     font-size: 30px;
 }
+/* footer css end */
 
-/* media query for banner*/
-@media screen and (max-width: 997px) {
-    #banner {
-        height: 140vh;
-    }
-
-    .name {
-        text-align: center;
-        font-size: .8rem;
-    }
-
+/* media query for banner */
+@media screen and (max-width: 900px) {
     .banner-content {
         grid-template-columns: 1fr;
         justify-content: center;
     }
-
     .banner-content .left img {
         width: 70%;
     }
-
-    .banner-content .right {
-        width: auto;
-    }
-
     .banner-content .right h1,
     h2 {
         text-align: center;
+        font-size: 20px;
     }
-
+    #banner {
+        height: 140vh;
+    }
+    .s-icons {
+        display: none;
+    } 
     #top {
         flex-direction: column;
         justify-content: center;
     }
-
-    .s-icons {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    #banner {
-        height: 140vh;
-    }
-
-}
-
-@media screen and (min-width: 997px) {
-    .banner-content {
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 1045px) {
-    section#about .about .about-write-up {
-        font-size: 1.2rem;
-
-    }
-}
+    .name {
+        text-align: center;
+        font-size: .8rem;
+        align-self: center;
+    }    
+} 
+/* banner media query ends */
 
 /* media queries for about section */
 @media screen and (max-width: 1200px) {
@@ -374,15 +352,10 @@ footer .copy-right-and-nav {
         width: 100%;
         border-radius: 50%;
     }
-
-    section#about .about .about-write-up p {
-        font-size: 1.3rem;
-    }
-}
-
-@media screen and (max-width: 997px) {
+} 
+@media screen and (max-width: 600px) {
     section#about {
-        margin-top: 10rem;
+        margin-top: 1rem;
     }
 }
 
@@ -391,52 +364,55 @@ footer .copy-right-and-nav {
         display: flex;
         flex-direction: column;
     }
+    section#about .about .about-write-up .card {
+        padding: 10px;
+    }
+    section#about .about .about-write-up {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 1500px) {
     section#about .about .about-write-up p {
-        font-size: 2rem;
+        font-size: 2.9rem;
     }
 }
+/* skills media queries ends */
 
 /* media queries for skills section */
 @media screen and (max-width: 1080px) {
-
     .skills-set-1,
     .skills-set-2,
     .skills-set-3 {
         grid-template-columns: 50%;
     }
+    .skills-set-1 {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 950px) {
 
     section#skills .skills .skills-set .skills-set-1,
     .skills-set-2 {
-        /* justify-content: center;  */
         grid-template-columns: 1fr;
     }
 
     section#skills {
+        margin-bottom:40rem;
         background-image: none;
     }
 
     section#skills .skills-card {
-        height: 140vh;
+        height: 110vh;
 
+    }
+    section#skills .skills-set-3 span button {
+        padding: 5px 8px;
+        
     }
 }
-
-@media screen and (max-width: 1120px) {
-    section#skills {
-        height: 140vh;
-    }
-
-    section#skills .skills-card {
-        height: 120vh;
-
-    }
-}
+/* skills media queries ends */
 
 /* media queries for gallery */
 @media screen and (max-width: 800px) {
@@ -447,6 +423,7 @@ footer .copy-right-and-nav {
         grid-template-columns: 1fr 1fr;
     }
 }
+/* gallery media queries ends */
 
 /* footer media queries */
 @media screen and (max-width: 900px) {
@@ -455,9 +432,22 @@ footer .copy-right-and-nav {
     height: 50vh;
 }
 footer {
-    height: 30vh;
+    height: 40vh;
+}
+footer write-up span h1{
+    font-size: 1rem;
+}
+.copy-right{
+    font-size: 20px;
+}
+.nav span{
+    display: inline;
+    margin: 10px;
+    font-size: 20px;
 }
   }
+/* footer media queries ends */
+
   /* contact media query */
   @media screen and (max-width: 800px) {
     .contact-add span{
@@ -466,4 +456,10 @@ footer {
     section#contact .contact {
         grid-template-columns: 1fr;
     }
-  }
+    div.footer-content div.footer-main button {
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    
+}
