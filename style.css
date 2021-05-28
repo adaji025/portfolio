@@ -466,5 +466,13 @@ footer span a {
     padding: 10px;
 }
   }
-  
 /* footer media queries ends */
+
+@media (orientation:landscape) {
+    .banner-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 80vh;
+    }
+    
+}
