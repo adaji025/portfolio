@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
@@ -25,10 +24,10 @@
                     <h1>adaji</h1>
                 </div>
                 <div class="s-icons fa-2x">
-                    <a href="https://www.facebook.com/mukhtar.adaji.5"><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com/adajimukhtar"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/see_serious/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%3Blf8TbOBLQN6D4aH8GLdoDQ%3D%3D"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/mukhtar.adaji.5" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/adajimukhtar" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/see_serious/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%3Blf8TbOBLQN6D4aH8GLdoDQ%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="banner-content">
@@ -215,7 +214,7 @@
             </div>
             <div class="contact">
                 <div class="contact-msg">
-                    <form action="/action_page.php">
+                    <form action="https://formspree.io/f/xrgrqkzz" method="POST" id="my-form">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your name..">
                         <label for="name">Email</label>
@@ -223,10 +222,11 @@
                         <label for="name">Subject</label>
                         <input type="text" id="subject" name="subject" placeholder="Subject...">
                         <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
                     
                         <input type="submit" value="Submit">
                       </form>
+                      <div id="status"></div>
                 </div>
                 <div class="contact-add">
                     <h2>Contact Me</h2>
@@ -256,10 +256,10 @@
 
                     <span>
                         <div class="social-media-icons fa-2x">
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.facebook.com/mukhtar.adaji.5" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/adajimukhtar" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/see_serious/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%3Blf8TbOBLQN6D4aH8GLdoDQ%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </span>
                 </div>
@@ -287,6 +287,9 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
